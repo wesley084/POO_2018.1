@@ -13,30 +13,33 @@ class Numero{
 
 public class Contato {
 	
-	String nome = "";
-	ArrayList<Numero> numeros = null;
+	String nome = " ";
+	ArrayList<Numero> numeros;
 	
 	
 	public Contato(String name) {
+		this.numeros = new ArrayList<Numero>();
 		this.nome = name;
 	}
 	
 	String addFone(String _identifi, String _num) {
-		if(nome.equals(""))
+		if(nome.equals(" "))
 			return "fail: contato nao iniciado\n";
-		for(int i = 0; i < numeros.size(); i++)
-			if(_identifi.equals(numeros.get(i).nIdentificador))
+		for(int i = 0; i < this.numeros.size(); i++) {
+			if(_identifi.equals(this.numeros.get(i).nIdentificador)) {
 				return("fail: fone " + _identifi + " ja existe\n");
-		numeros.add(new Numero(_identifi, _num));
+			}
+		}
+		this.numeros.add(new Numero(_identifi, _num));
 		return "done";
 	}
 
 	String rmFone(String _identifi) {
-		if(nome.equals(""))
+		if(nome.equals(" "))
 			return "fail: contato nao iniciado\n";
-		for(int i = 0; i < numeros.size(); i++)
-			if(_identifi.equals(numeros.get(i).nIdentificador)) {
-				numeros.remove(i);
+		for(int i = 0; i < this.numeros.size(); i++)
+			if(_identifi.equals(this.numeros.get(i).nIdentificador)) {
+				this.numeros.remove(i);
 				return "done";
 			}
 		return("fail: fone " + _identifi + " nao existe\n");
@@ -45,12 +48,11 @@ public class Contato {
 
 class Interface{
 	public static void main(String[] args) {
-		Contato contact = new Contato("");
+		Contato contact = new Contato(" ");
 		
 		while(true){
 			String line = Poo.input("Digite um comando: ");
 			ArrayList<String> ui = Poo.split(line, " ");
-
 			try {
 				switch (ui.get(0)) {
 				case "help":{
@@ -59,17 +61,19 @@ class Interface{
 							+ "addFone $identificador $numero :: adiciona um numero\n"
 							+ "rmFone $identificador :: remove o numero correspondente\n"
 							+ "exit :: finaliza o programa\n");
+					break;
 				}
 				case "show":{
-					if(contact.nome.equals(""))
+					if(contact.nome.equals(" "))
 						Poo.print("fail: contato não iniciado\n");
 					else {
-						Poo.print(contact.nome);
-						for(int i = 0; i < contact.numeros.size(); i++) {
-							Poo.print("[" + contact.numeros.get(i).nIdentificador + ":" 
-									+ contact.numeros.get(i).nNumero + "]");
+						System.out.print(contact.nome + " ");
+						for(Numero n : contact.numeros) {
+							System.out.print("["+n.nIdentificador+":"+n.nNumero+"]");
 						}
+						Poo.print("");
 					}
+					break;
 				}
 				case "init":{
 					contact.nome = ui.get(1);
@@ -86,6 +90,7 @@ class Interface{
 					break;
 				}
 				case "exit":{
+					Poo.print("Programa finalizado!");
 					System.exit(0);
 				}
 				//FIM DOS CASOS DE TESTE
