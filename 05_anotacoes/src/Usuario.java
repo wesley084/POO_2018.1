@@ -6,17 +6,23 @@ public class Usuario{
 	public Usuario(String user, String pass) {
 		this.Usuario = user;
 		this.password = pass;
-		this.notas = new Repositorio<Nota>("notas");
+		this.notas = new Repositorio<Nota>("nota");
 	}
 	
-	boolean addNote(Nota nota) {
+	void addNote(Nota nota) {
 		notas.add(nota.getTitulo(), nota);
-		return true;
 	}
 	
-	boolean rmNote(String tit) {
+	void rmNote(String tit) {
 		notas.remove(tit);
-		return true;
+	}
+	
+	String showNotes() {
+		String saida = "";
+		for (int i = 0; i < notas.getAll().size(); i++) {
+			saida += notas.getAll().get(i).getTitulo() + " : " + notas.getAll().get(i).getTexto() + "\n";
+		}
+		return saida.substring(0, saida.length()-1);
 	}
 	
 	//gets and sets
