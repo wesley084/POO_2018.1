@@ -2,24 +2,24 @@
 
 O que você fez:
   - Todos os pontos pedidos na atividade foram realizados.
-    Composicao: 6 arquivos/classes: 1 controlador, 1 repositorio generico, 1 classe gerenciadora de Users,
-    1 classe manager de tweet,1 classe User, 1 classe Tweet. O controlador e repo faz o mesmo de sempre,
-    gerenciador de users intermediando a relacao entre usuarios, manager tweet controla os ids dos tweets
-    e as classes Tweet e User são de definicao.
+    Composicao: 5 arquivos/classes: 1 controlador, 1 repositorio generico, 1 classe sistema,
+    1 classe usuario, 1 classe nota. O controlador e repo faz o mesmo de sempre, as classes 
+    nota e usuario sao as que os definem com seus CRUDs, a classe sistema eh a responsavel por 
+    gerenciar tudo que o usuario faz com as notas, dentro do sistema ha um gerenciador de login
+    que poderia optar por fazer separado mas optei por fazer no mesmo arquivo.
     
 Com quem e como você fez:
   - Sozinho, ao ter duvida tentava pensar uma logica diferente ou usar o google.
 
 O que aprendeu e sabe fazer:
-  - Aprendi que as vezes seguir a dicas da descricao do trabalho em vez  de tentar fazer 'direto' poderia
-    poupar tempo e codigo.
+  - Treinei um pouco da logica de login/logout que eh algo bem comum na maioria dos sistemas reais 
+    e suponho que sei replicar as competencias necessarias nessa atividade para atividades futuras.
     
 O que tem dificuldade ainda:
-  - Eu penso em fazer de uma forma mas quando chega no fim falta algo que a atividade pede que nao combina 
-    com a forma que estou desenvolvendo, ai tenho que fazer uma adaptacao ou mudar muita coisa.
+  - Nessa atividade não tive grandes problemas, nao precisei demorar pensando em como fazer algo.
 
 Quanto tempo levou pra fazer a atividade:
-  - Aproximadamente 7 horas
+  - Aproximadamente 2 horas
   
 Pontos realizados segundo descricao da atividade:
 [x][1.0 P] addUser
