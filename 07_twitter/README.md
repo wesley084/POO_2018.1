@@ -1,7 +1,8 @@
 07_Twitter:
 
 O que você fez:
-  - 6 arquivos/classes: 1 controlador, 1 repositorio generico, 1 classe gerenciadora de Users,
+  - Todos os pontos pedidos na atividade foram realizados.
+    Composicao: 6 arquivos/classes: 1 controlador, 1 repositorio generico, 1 classe gerenciadora de Users,
     1 classe manager de tweet,1 classe User, 1 classe Tweet. O controlador e repo faz o mesmo de sempre,
     gerenciador de users intermediando a relacao entre usuarios, manager tweet controla os ids dos tweets
     e as classes Tweet e User são de definicao.
