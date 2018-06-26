@@ -20,16 +20,3 @@ O que tem dificuldade ainda:
 
 Quanto tempo levou pra fazer a atividade:
   - Aproximadamente 2 horas
-  
-Pontos realizados segundo descricao da atividade:
-[x][1.0 P] addUser
-[x][1.0 P] showUsers
-[x][1.0 P] login
-[x][1.0 P] logout
-[x][1.0 P] changePass
-[x][1.0 P] addNote
-[x][1.0 P] showNotes
-[x][1.0 P] inicialização do sistema
-[x][2.0 E] título deve ter uma palavra e o texto várias
-[x][1.0 E] apagar nota por título
-   [11.0 ] Total pontos
