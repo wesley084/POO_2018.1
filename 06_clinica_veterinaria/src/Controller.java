@@ -20,11 +20,7 @@ public class Controller {
 				String comandos [] = line.split(" ");
 				
 				switch(comandos[0]) {
-					
-					case "init":
-
-						break;
-					
+						
 					case "nwcli":
 						String nome = "";
 						for (int i = 2; i < comandos.length; i++)
