@@ -1,0 +1,24 @@
+=========================
+######## all tests ######
+init
+addCliente wesley
+addCliente wesley
+abrirConta wesley
+showAll
+encerrarConta wesley 1005
+abrirConta wesley
+addCliente maria
+encerrarConta maria 1008
+login wesley
+deposito 1006 500
+saque 1006 200
+transf 1006 1008 50
+show
+extrato 1006
+logout
+login maria
+extrato 1008
+exit
+
+
+
