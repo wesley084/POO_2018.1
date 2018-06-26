@@ -32,4 +32,4 @@ Pontos realizados segundo descricao da atividade:
 [x][1.0 P] inicialização do sistema
 [x][2.0 E] título deve ter uma palavra e o texto várias
 [x][1.0 E] apagar nota por título
-   [13.0 ] Total pontos
+   [11.0 ] Total pontos
