@@ -28,6 +28,11 @@ public class Talk implements Chat{
 	}
 	
 	@Override
+	public boolean leave(String _user) {
+		throw new RuntimeException("fail: Voce nao pode sair de um chat privado");
+	}
+	
+	@Override
 	public String getChatId() {
 		return talkId;
 	}
@@ -45,6 +50,11 @@ public class Talk implements Chat{
 		return saida;
 	}
 	
+	@Override
+	public String getMembrosName() {
+		return "[ "+ this.membros[0] + " " + this.membros[1] + " ]";
+	}
+
 	@Override
 	public int getNumDeZaps() {
 		return this.zaps.getAll().size();
