@@ -12,10 +12,9 @@ public class Controller {
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
 		String line;
-		
+		System.out.print("Digite init _valor para iniciar \n>> ");
 		while(true) {
 			try {
-				System.out.print(">> ");
 				line = scan.nextLine();
 				String comandos [] = line.split(" ");
 				
@@ -27,7 +26,7 @@ public class Controller {
 						break;
 					
 					case "nwcli":
-						if (comandos.length<3)
+						if (comandos.length < 3)
 							throw new RuntimeException("Fail: Insira todos os dados!");
 						String nome = "";
 						for (int i = 2; i < comandos.length; i++) {
