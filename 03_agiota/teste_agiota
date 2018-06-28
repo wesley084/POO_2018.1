@@ -1,0 +1,23 @@
+=================================
+********** all test ***********
+init 500
+nwcli maria maria silva
+nwcli josue matos
+nwcli maria ana maria silva
+emprestar maria 300
+emprestar josue 50
+emprestar maria 100
+emprestar bruno 30
+emprestar josue 400
+latran
+lscli maria
+lacli
+receber maria 1000
+rebeber maria 350
+latran
+receber josue 1
+receber maria 10
+show josue
+matar josue
+latran
+lacli
