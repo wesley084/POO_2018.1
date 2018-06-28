@@ -12,6 +12,7 @@ public class Controller {
 		scan = new Scanner(System.in);
 		String line;
 		system = new Sistema();
+		print("Digite um comendo ou help: \n>>");
 		while(true) {
 			try {
 				line = scan.nextLine();
@@ -75,6 +76,21 @@ public class Controller {
 					case "exit":
 						print("Programa finalizado!");
 						System.exit(0);
+						break;
+						
+					case "help":
+						print("* addUser _username");
+						print("* allUsers");
+						print("* newTalk _user1 _user2");
+						print("* notify _username");
+						print("* newGroup _username _groupname");
+						print("* invite _user1 _user2 _grupId");
+						print("* leave _username _chatname");
+						print("* ler _username _chatId");
+						print("* zap _username _chatId _zap");
+						print("* chats _username");
+						print("* users _chatId");
+						print("* exit");
 						break;
 						
 					default:
