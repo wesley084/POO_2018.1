@@ -18,6 +18,12 @@ public class Grupo implements Chat{
 	}
 	
 	@Override
+	public boolean leave(String _user) {
+		membros.remove(_user);
+		return true;
+	}
+	
+	@Override
 	public boolean addMembro(User _vitima) {
 		this.membros.add(_vitima.getIdUser(), _vitima);
 		return true;
@@ -44,5 +50,13 @@ public class Grupo implements Chat{
 	@Override
 	public int getNumDeZaps() {
 		return this.zaps.getAll().size();
+	}
+	
+	@Override
+	public String getMembrosName() {
+		String saida = "[ ";
+		for (User user : this.membros.getAll()) 
+			saida += user.getIdUser() + " ";
+		return saida + "]";
 	}
 }
