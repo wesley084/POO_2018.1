@@ -1,4 +1,4 @@
-09_whatsapp: [watsapp II]
+09_whatsapp: [watsapp I e watsapp II]
 
 O que você fez:
   - Todos os pontos pedidos na atividade foram realizados, mas com algumas ressalvas.
