@@ -52,7 +52,7 @@ class Sistema {
 	public boolean cadCliente(String id, String nome) {
 		for (Cliente cli : clientes) {
 			if(cli.idCli.equals(id))
-				throw new RuntimeException("Fail: Cliente já existe!");
+				throw new RuntimeException("fail: cliente ja existe!");
 		}
 		clientes.add(new Cliente(id, nome));
 		return true;	
@@ -64,7 +64,7 @@ class Sistema {
 			saida += cliente.toString() + "\n";
 		}
 		if(saida.equals(""))
-			saida = "Fail: Nenhum cliente cadastrado!\n";
+			saida = "fail: nenhum cliente cadastrado!\n";
 		return saida.substring(0, saida.length()-1);
 	}
 	
@@ -75,7 +75,7 @@ class Sistema {
 				saida += tran.toString() + "\n";
 		}
 		if(saida.equals(""))
-			saida = "Fail: Nenhuma transacao encontrada!\n";
+			saida = "fail: nenhuma transacao encontrada!\n";
 		return saida.substring(0, saida.length()-1);
 	}
 	
@@ -84,7 +84,7 @@ class Sistema {
 			if(cliId.equals(clientes.get(i).idCli))
 				clientes.remove(i);
 			else
-				throw new RuntimeException("Fail:Cliente "+ cliId +" nao encontrado!");
+				throw new RuntimeException("fail: cliente "+ cliId +" nao encontrado!");
 		}
 		for (int i = transacoes.size()-1; i >= 0 ; i--) {
 			if(cliId.equals(transacoes.get(i).idCli))
@@ -94,10 +94,10 @@ class Sistema {
 	}
 	
 	public boolean emprestar(String cliId, float valor) {
-		if(valor<=0)
-			throw new RuntimeException("Fail: Valor invalido!");
-		if(cliId.equals(valor>caixa))
-			throw new RuntimeException("Fail: Fundos insuficientes!");
+		if(valor <= 0)
+			throw new RuntimeException("fail: valor invalido!");
+		if(valor > caixa)
+			throw new RuntimeException("fail: fundos insuficientes!");
 		for (int i = 0; i < clientes.size(); i++) {
 			if(cliId.equals(clientes.get(i).idCli)) {
 				transacoes.add(new Transacao(nextId, cliId, (valor-(2*valor))));
@@ -107,7 +107,7 @@ class Sistema {
 				return true;
 			}
 		}
-		throw new RuntimeException("Fail: Cliente "+ cliId +" nao encontrado!");
+		throw new RuntimeException("fail: Cliente "+ cliId +" nao encontrado!");
 	}
 	
 	public boolean receber(String cliId, float valor) {
@@ -124,7 +124,7 @@ class Sistema {
 				return true;
 			}
 		}	
-		throw new RuntimeException("Fail: Cliente "+ cliId +" nao encontrado!");
+		throw new RuntimeException("fail: cliente "+ cliId +" nao encontrado!");
 	}
 	
 	public String listTran() {
@@ -133,7 +133,7 @@ class Sistema {
 			saida += tran.toString() + "\n";
 		}
 		if(saida.equals(""))
-			saida = "Fail: Nenhuma transacao realizada!\n";
+			saida = "fail: nenhuma transacao realizada!\n";
 		return saida.substring(0, saida.length()-1);
 	}
 }
