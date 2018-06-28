@@ -14,7 +14,6 @@ public class Controller {
 		system = new Sistema();
 		while(true) {
 			try {
-				System.out.print("");
 				line = scan.nextLine();
 				String comandos [] = line.split(" ");
 				
@@ -48,6 +47,11 @@ public class Controller {
 						print("done");
 						break;
 						
+					case "leave":
+						system.leave(comandos[1], comandos[2]);
+						print("done");
+						break;
+					
 					case "ler":
 						print(system.ler(comandos[1], comandos[2]));
 						break;
@@ -60,8 +64,12 @@ public class Controller {
 						print("done");  //uso_substring_pra_remover_ultimo_espaco_em_txt_apenas_estetica_de_exibicao
 						break;
 						
-					case "saldo":
-						
+					case "chats":
+						print(system.getUserChats(comandos[1]));
+						break;
+					
+					case "users":
+						print(system.getMembrosChat(comandos[1]));
 						break;
 						
 					case "exit":
