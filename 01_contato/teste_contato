@@ -1,0 +1,17 @@
+======================================================
+******************* todos testes *********************
+init david
+show
+iniciar joao
+show 
+addFone oi 88
+addFone tim 99
+addFone vivo 83
+show
+addFone oi 85
+rmFone tim
+show
+rmFone claro
+init mary
+update mary vivo:1234 home:4321 vivo:3214 work:4444
+show
