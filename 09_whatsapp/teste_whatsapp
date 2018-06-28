@@ -1,0 +1,65 @@
+=========================================
+********** testes whatsapp I ************
+addUser goku
+addUser sara
+addUser tina
+allUsers
+newChat goku guerreiros
+newChat goku homens
+newChat sara familia
+newChat sara guerreiros
+chats goku
+chats sara
+chats tina
+invite goku sara guerreiros
+invite sara tina guerreiros
+invite tina goku familia
+chats sara
+chats tina
+chats goku
+users guerreiros
+users familia
+leave sara guerreiros
+users guerreiros
+chats sara
+zap goku guerreiros sou goku galera
+zap tina guerreiros oi goku
+notify goku
+notify tina
+ler goku guerreiros
+ler tina guerreiros
+ler sara guerreiros
+zap goku guerreiros vamos sair tina?
+zap tina guerreiros voce ta com fome goku?
+zap goku guerreiros to com saudade de voce.
+notify tina
+notify goku
+ler goku guerreiros
+ler tina guerreiros
+
+=========================================
+********** testes whatsapp II **********
+addUser goku
+addUser sara
+addUser tina
+newGroup goku familia
+invite goku sara familia
+newTalk goku tina
+notify goku
+notify sara
+notify tina
+zap goku familia to levando pizza
+notify sara
+ler sara familia
+zap sara familia a tina ta aqui te esperando
+zap goku goku-tina passa la em casa
+notify tina
+ler tina goku-tina
+zap tina goku-tina ja to aqui com a sara esperando
+ler goku goku-tina
+ler goku familia
+invite goku sara goku-tina
+
+
+
+
