@@ -1,0 +1,59 @@
+***ADICIONAR E VER PESSOAS***
+nwcli luke luke skywallker
+nwcli lea princesa lea
+nwcli vader darth vader
+nwcli lea fracileia moreira
+lacli
+===============================
+***ADICIONAR E VER ANIMAIS***
+nwani vader rex gato
+nwani vader chaninha urubu
+nwani vader rex dino
+lscli vader
+nwani luke rosinha chinchila
+laani
+===============================
+***ADICIONAR E VER SERVICOS***
+nwser tosa 30.0
+nwser banho 15.0
+nwser tingimento 150.0
+laser
+================================
+****ADICIONAR E VER VENDAS****
+nwven luke rosinha tosa
+nwven vader rex banho
+nwven luke rosinha tingimento  
+nwven r2d2 rex banho
+nwven luke xuxu banho
+nwven luke rosinha castracao
+laven
+================================
+**********VER SALDO***********
+saldo
+================================
+*****TODO CODIGO TESTE*****
+nwcli luke luke skywallker
+nwcli lea princesa lea
+nwcli vader darth vader
+nwcli lea fracileia moreira
+lacli
+nwani vader rex gato
+nwani vader chaninha urubu
+nwani vader rex dino
+lscli vader
+nwani luke rosinha chinchila
+laani
+nwser tosa 30.0
+nwser banho 15.0
+nwser tingimento 150.0
+laser
+nwven luke rosinha tosa
+nwven vader rex banho
+nwven luke rosinha tingimento  
+nwven r2d2 rex banho
+nwven luke xuxu banho
+nwven luke rosinha castracao
+laven
+saldo
+
+
