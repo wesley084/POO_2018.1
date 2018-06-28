@@ -1,14 +1,14 @@
 public class User {
 	private String idUser;
-	Repositorio<Tupla> chats;
+	Repositorio<Tupla> userChats;
 	public User(String _idUser) {
 		this.setIdUser(_idUser);
-		this.chats = new Repositorio<Tupla>("chat");
+		this.userChats = new Repositorio<Tupla>("chat");
 	}
 	
 	String notifica() {
 		String saida = "[ ";
-		for (Tupla tupla : this.chats.getAll()) {
+		for (Tupla tupla : this.userChats.getAll()) {
 			int sizeChat = 0;
 			Chat chat = Sistema.chats.get(tupla.chatId);
 			
@@ -30,6 +30,13 @@ public class User {
 			}
 			saida += tupla.chatId + "("+ (sizeChat - tupla.lidas) +") ";
 		}
+		return saida + "]";
+	}
+	
+	String getChatsNames(){
+		String saida = "[ ";
+		for (Tupla tup : userChats.getAll()) 
+			saida += tup.chatId + " ";
 		return saida + "]";
 	}
 	
