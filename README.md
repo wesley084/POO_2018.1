@@ -8,4 +8,4 @@
   - As pastas com ultimo commit "Completo" estao finalizadas.
   
   - No momento esta faltando somente a 08_agenda_hibrida, quando fui fazer nao tinha a descricao acabei deixando 
-    pra depois, mas ja comecei.
+    pra depois, mas ja to quase terminando.
