@@ -7,5 +7,5 @@
     
   - As pastas com ultimo commit "Completo" estao finalizadas.
   
-  - No momento esta faltando somente a 08_agenda_hibrida, quando fui fazer nao tinha a descricao acabei deixando 
-    pra depois, mas ja to quase terminando.
+  - No momento a 08_agenda_hibrida se encontra com um bug que faz com que o toString das Notas nao apareca corretamente
+    alem disso nao entendi a funcionalidade no que se refere a "pass".
